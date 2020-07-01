@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="24Point:war exploded">
+    <output-path>$PROJECT_DIR$/../24Point/target/24Point</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>24Point</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="24Point" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../24Point/target/24Point/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="24Point/web/Web" />
+    </root>
+  </artifact>
+</component>
