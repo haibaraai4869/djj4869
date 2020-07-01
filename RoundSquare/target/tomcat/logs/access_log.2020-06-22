@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:45:01 +0800] "GET /travel HTTP/1.1" 302 - http-bio-4869-exec-1 0
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:45:01 +0800] "GET /travel/ HTTP/1.1" 404 965 http-bio-4869-exec-3 18
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:47:37 +0800] "GET /RoundSquare HTTP/1.1" 302 - http-bio-4869-exec-2 0
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:47:37 +0800] "GET /RoundSquare/ HTTP/1.1" 404 975 http-bio-4869-exec-3 27
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:48:07 +0800] "GET /RoundSquare/RoundSquare.html HTTP/1.1" 200 1180 http-bio-4869-exec-4 14
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:48:07 +0800] "GET /RoundSquare/js/angular.min.js HTTP/1.1" 404 1009 http-bio-4869-exec-5 3
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:48:07 +0800] "GET /RoundSquare/js/jquery-3.3.1.js HTTP/1.1" 200 282115 http-bio-4869-exec-6 18
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:48:07 +0800] "GET /RoundSquare/js/angular.min.js HTTP/1.1" 404 1009 http-bio-4869-exec-8 0
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:48:11 +0800] "POST /RoundSquare/RoundSquareServlet HTTP/1.1" 404 1011 http-bio-4869-exec-9 2
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:56:39 +0800] "GET /RoundSquare HTTP/1.1" 302 - http-bio-4869-exec-2 0
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:56:39 +0800] "GET /RoundSquare/ HTTP/1.1" 404 975 http-bio-4869-exec-3 28
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:56:52 +0800] "GET /RoundSquare/js/angular.min.js HTTP/1.1" 404 1009 http-bio-4869-exec-4 3
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:56:52 +0800] "GET /RoundSquare/js/angular.min.js HTTP/1.1" 404 1009 http-bio-4869-exec-6 2
+0:0:0:0:0:0:0:1 - - [22/Jun/2020:22:56:57 +0800] "POST /RoundSquare/RoundSquareServlet HTTP/1.1" 200 4 http-bio-4869-exec-7 278

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        function getR() {
+            let r = $("#r").val();
+            //alert("调用了getR");
+            return r * 2;
+        }//获取圆的半径
+
+        function changeCircle() {
+            let count = 1;
+            let d = getR();
+            while (d / 2 >= 10) {
+                d = d / 10;
+                if (d <= 1) break;
+                count = count * 10;
+                //alert(count);
+            }
+            $("#autoCircle").css('width', d * 100 + 'px');
+            $("#autoCircle").css('height', d * 100 + 'px');
+            $("#rule").html("单位：" + count);
+            $("#speaking").html("半径为" + getR() / 2 + "大概这么大");
+        }
+
+        //通过div的id根据半径修改圆的class（style标签体）的属性
+
+        $(function () {
+            $("#cal_btn").click(function () {
+                //alert(getR());
+                $.post("RoundSquareServlet", {"rLength": getR()}, function (data) {//serialize()方法是将表单内所有数据序列化，转换为键值对的形式，function是回传函数，用于操作服务端回传数据
+                    $("#square").html("计算面积为：" + data);
+                })
+                changeCircle();
+            })
+        })
+    </script>
+
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: aqua; /*设置一个正方形*/
+
+            border-radius: 50%; /*切成圆*/
+            margin: 0 auto;
+            top: 50%;
+            margin-top: 20px;
+        }
+
+        .rule { /*设置一个参照物*/
+            width: 100px;
+            height: 2px;
+            background-color: deepskyblue;
+
+            margin-left: 200px;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+<form id="roundSquareForm" action="" method="post" accept-charset="utf-8">
+
+
+    <label for="r">半径求面积</label>
+
+    <input type="text" id="r" name="r" placeholder="请输入半径">
+    <!--button><i id="mark"></i></button-->
+
+    <button type="button" id="cal_btn">计算</button>
+    <!-- <input type="submit" id="cal_btn">-->
+    <br>
+    <div id="square"></div>
+    <div id="speaking" style="margin-left: 550px; margin-top: 100px">半径为1大概这么大</div>
+    <div id="autoCircle" class="circle"></div>
+    <div id="rule" class="rule">单位：1</div>
+    <br>
+    <br>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+        function getR() {
+            let r = $("#r").val();
+            alert("调用了getR");
+            return r;
+        }
+$(function () {
+    $("#cal_btn").click(function () {
+        /*alert(getR());*/
+
+            $.post("RoundSquareServlet",{"rLength":getR()},function(data){//serialize()方法是将表单内所有数据序列化，转换为键值对的形式，function是回传函数，用于操作服务端回传数据
+                alert("面积为："+data);
+        })
+    })
+})
+
+    </script>
+</head>
+
+
+<body>
+<form id="roundSquareForm" action="" method="post" accept-charset="utf-8">
+
+
+                <label for="r">半径求面积</label>
+
+                <input type="text" id="r" name="r" placeholder="请输入半径">
+                <!--button><i id="mark"></i></button-->
+
+        <button type="button" id="cal_btn">计算</button>
+       <!-- <input type="submit" id="cal_btn">-->
+
+
+
+</form>
+
+</body>
+</html>
