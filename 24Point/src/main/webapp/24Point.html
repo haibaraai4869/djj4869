@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>24Point</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script>
+       // $(function () {
+
+      //  })
+       $(function () {
+           let flag=false;
+           $("#cal_btn").click(function () {
+               
+                   //$("#conclusion").html("后缀表达式为：");
+                   //alert("单击事件");
+                   // alert($("#num1").val());
+                   $("#for_list").submit();//js中提交表单数据
+                   flag=true;
+
+           })
+           if(flag){
+           alert(2);
+           $.ajax({
+               async: false,
+               type:"post",
+               url:"demo1Servlet",
+               data:
+                   $("#for_list").serialize(),
+               success:function (result) {
+                  /*alert(1);
+                  alert(result);*/
+
+                  $("#conclusion").html("后缀式为："+result);
+               }
+           })
+          }
+       })
+
+    </script>
+</head>
+<body>
+<form id="for_list" accept-charset="utf-8">
+        <input type="text" name="num1" id="num1">
+        <input type="text" name="num2" id="num2">
+        <input type="text" name="num3" id="num3">
+        <input type="text" name="num4" id="num4"><br>
+    <button type="button" id="cal_btn" onclick="btn_clk()">计算</button><br>
+
+</form>
+<div id="conclusion"></div>
+</body>
+</html>

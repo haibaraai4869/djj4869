@@ -7,12 +7,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="C:/Maven/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="C:\Maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
@@ -26,10 +39,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,6 +51,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\haibaraai4869\Desktop\新建文件夹 (2)\javaweb\ProSource\24Point\src\main\webapp" />
+      <recent name="C:\Users\haibaraai4869\Desktop\新建文件夹 (2)\javaweb\ProSource\24Point\src\main\webapp\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\haibaraai4869\Desktop\新建文件夹 (2)\javaweb\ProSource\24Point\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn tomcat7:run" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -68,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593675370497</updated>
-      <workItem from="1593675376019" duration="5956000" />
+      <workItem from="1593675376019" duration="22950000" />
     </task>
     <servers />
   </component>
@@ -76,21 +107,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="146" key="GridCell.Tab.0.bottom" timestamp="1593759268775">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1593768860503">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="146" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593759268775" />
-    <state width="1237" height="146" key="GridCell.Tab.0.center" timestamp="1593759268775">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1593768860503" />
+    <state x="217" y="266" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593760376295">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="146" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1593759268775" />
-    <state width="1237" height="146" key="GridCell.Tab.0.left" timestamp="1593759268775">
+    <state x="217" y="266" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1593760376295" />
+    <state x="476" y="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1593760380825">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="146" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1593759268775" />
-    <state width="1237" height="146" key="GridCell.Tab.0.right" timestamp="1593759268775">
+    <state x="476" y="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1593760380825" />
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom" timestamp="1593776303828">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="146" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593759268775" />
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593776303828" />
+    <state width="1237" height="178" key="GridCell.Tab.0.center" timestamp="1593776303828">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="178" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1593776303828" />
+    <state width="1237" height="178" key="GridCell.Tab.0.left" timestamp="1593776303827">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="178" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1593776303827" />
+    <state width="1237" height="178" key="GridCell.Tab.0.right" timestamp="1593776303828">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="178" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593776303828" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1593774379956">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1593774379956" />
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1593776303863">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1593776303863" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1593776406506">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1593776406506" />
   </component>
 </project>
